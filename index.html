@@ -16,8 +16,7 @@
     --gold: #C9A455; --amber: #A16207; --amber-soft: #FBF3E4; --cream: #F5F3EC;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  html { -webkit-text-size-adjust: 100%; background: #FAFAF8 !important; scroll-behavior: smooth; scroll-padding-top: 80px; }
-
+  html { -webkit-text-size-adjust: 100%; background: #FAFAF8 !important; }
   body { background: #FAFAF8 !important; }
   section, .wrap { background: transparent; }
   section.features, section.pricing { background: #FAFAF8; }
@@ -42,7 +41,7 @@
   .btn.big { padding: 15px 30px; font-size: 16px; }
 
   /* Hero */
-  .hero { padding: 84px 0 64px; text-align: center; background: linear-gradient(180deg, var(--bg) 0%, var(--cream) 100%); }
+  .hero { padding: 84px 0 0; text-align: center; background: linear-gradient(180deg, var(--bg) 0%, var(--cream) 100%); overflow: hidden; }
   .pill { display: inline-flex; align-items: center; gap: 8px; background: var(--green-soft); border: 1px solid var(--green-border); color: var(--green); font-size: 12.5px; font-weight: 600; border-radius: 99px; padding: 6px 14px; margin-bottom: 24px; }
   h1 { color: var(--ink); font-size: clamp(38px, 6vw, 62px); font-weight: 800; letter-spacing: -0.025em; line-height: 1.06; }
   h1 .accent { color: var(--green); }
@@ -52,7 +51,7 @@
 
   /* Phone mock */
   .phone-stage { margin-top: 64px; display: flex; justify-content: center; }
-  .phone { width: 340px; max-width: 90vw; background: #141820; border-radius: 44px; padding: 12px; box-shadow: 0 24px 60px rgba(26,31,43,0.24); margin: 0 auto; }
+  .phone { width: 340px; max-width: 90vw; background: #141820; border-radius: 44px; padding: 12px; box-shadow: 0 24px 60px rgba(26,31,43,0.24); margin: 0 auto -130px; }
   .screen { background: var(--bg); border-radius: 34px; overflow: hidden; }
   .scr-head { background: var(--surface); border-bottom: 1px solid var(--border); padding: 34px 18px 0; }
   .scr-brand { display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 14px; }
@@ -194,7 +193,7 @@
       <div class="feat">
         <div class="feat-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1E6B4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7V12L15.5 14"/></svg></div>
         <h3>Tap-to-track mileage</h3>
-        <p>Tap Start when you leave for a showing, End when you arrive. Every business mile is logged at the 2026 IRS rate — $0.725/mi — with an audit-ready trip record.</p>
+        <p>Tap Start when you leave for a showing, End when you arrive. Every business mile is logged at the correct dated IRS rate — including 2026’s rare mid-year increase to $0.76/mi — with an audit-ready trip record.</p>
       </div>
       <div class="feat">
         <div class="feat-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1E6B4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8H16M8 12H16M8 16H12"/></svg></div>
@@ -226,7 +225,7 @@
     <h2>Keep every deduction you've earned</h2>
     <div class="oldway">
       <span class="tag">The old way</span>
-      <span class="txt">A shoebox of receipts and a <b>$250/yr average CPA cleanup</b> every April — after it's too late to fix anything.</span>
+      <span class="txt">A Schedule C return averages <b>$457 at a CPA</b> (NSA fee survey) — and 78% of firms charge a <b>~$166 surcharge for disorganized files</b>. The shoebox literally costs extra.</span>
     </div>
     <div class="price-grid">
       <div class="price featured">
