@@ -52,14 +52,17 @@
   /* Phone mock */
   .phone-stage { margin-top: 64px; display: flex; justify-content: center; }
   .phone { width: 340px; max-width: 90vw; background: #141820; border-radius: 44px; padding: 12px; box-shadow: 0 24px 60px rgba(26,31,43,0.24); margin: 0 auto -130px; }
-  .screen { background: var(--bg); border-radius: 34px; overflow: hidden; }
-  .scr-head { background: var(--surface); border-bottom: 1px solid var(--border); padding: 34px 18px 0; }
-  .scr-brand { display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 14px; }
-  .mini-mark { width: 22px; height: 22px; border-radius: 6px; background: var(--green); display: flex; align-items: center; justify-content: center; }
-  .scr-tabs { display: flex; gap: 16px; margin-top: 14px; font-size: 11px; color: var(--ink-soft); }
-  .scr-tabs b { color: var(--ink); border-bottom: 2px solid var(--green); padding-bottom: 8px; }
-  .scr-tabs span { padding-bottom: 8px; }
-  .scr-body { padding: 14px; display: flex; flex-direction: column; gap: 10px; }
+  .screen { background: var(--green-d); border-radius: 34px; overflow: hidden; position: relative; }
+  .scr-head { padding: 30px 18px 16px; color: #fff; }
+  .scr-brand { display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 14px; color: #fff; }
+  .mini-mark { width: 22px; height: 22px; border-radius: 6px; background: rgba(255,255,255,0.16); display: flex; align-items: center; justify-content: center; }
+  .scr-hero-label { font-size: 8.5px; font-weight: 700; letter-spacing: 0.08em; color: #9DBFAE; text-transform: uppercase; margin-top: 14px; }
+  .scr-hero { font-size: 27px; font-weight: 600; margin-top: 5px; letter-spacing: -0.02em; }
+  .scr-hero-sub { font-size: 10px; color: #C6DCD0; margin-top: 4px; }
+  .scr-tabbar { position: absolute; bottom: 10px; left: 12px; right: 12px; background: rgba(252,252,250,0.85); backdrop-filter: blur(10px); border-radius: 16px; display: flex; padding: 4px; font-size: 8.5px; font-weight: 700; color: var(--ink-soft); }
+  .scr-tabbar span, .scr-tabbar b { flex: 1; text-align: center; padding: 7px 0; }
+  .scr-tabbar b { background: var(--green-d); color: #fff; border-radius: 12px; }
+  .scr-body { background: var(--bg); border-radius: 18px 18px 34px 34px; padding: 14px 14px 62px; display: flex; flex-direction: column; gap: 10px; }
   .scr-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 13px 14px; text-align: left; }
   .scr-label { font-size: 8.5px; font-weight: 700; letter-spacing: 0.07em; color: var(--ink-faint); text-transform: uppercase; }
   .scr-big { font-size: 22px; font-weight: 600; margin-top: 5px; }
@@ -151,26 +154,26 @@
             <span class="mini-mark"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M3.5 10.5L12 3.5L20.5 10.5" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.5 10.5V19.5C5.5 20.05 5.95 20.5 6.5 20.5H17.5C18.05 20.5 18.5 20.05 18.5 19.5V10.5" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.5 13.8L11 16.3L15.8 10.8" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             Closebooks
           </div>
-          <div class="scr-tabs"><b>Overview</b><span>Deals</span><span>Expenses</span><span>Fees</span><span>Mileage</span></div>
+          <div class="scr-hero-label">Net income · 2026</div>
+          <div class="scr-hero num">$27,164.02</div>
+          <div class="scr-hero-sub">of $28,502 gross · 3 deals closed · rules applied</div>
         </div>
         <div class="scr-body">
-          <div class="scr-card">
-            <div class="scr-label">Net income</div>
-            <div class="scr-big num" style="color:var(--green)">$27,539.52</div>
-            <div class="scr-sub">after expenses, fees &amp; mileage</div>
+          <div class="scr-card" style="background:var(--amber-soft);border-color:transparent">
+            <div class="scr-label" style="color:var(--amber)">Set aside for Sep 15</div>
+            <div class="scr-big num" style="color:var(--amber)">$959.54</div>
           </div>
           <div class="scr-card">
-            <div class="scr-label">Set aside per quarter</div>
-            <div class="scr-big num" style="color:var(--amber)">$1,053.39</div>
-            <div class="scr-sub">next due Sep 15</div>
-          </div>
-          <div class="scr-card">
-            <div class="scr-row"><span>Gross commission</span><span class="v">$28,972.00</span></div>
-            <div class="scr-row"><span>Expenses &amp; fees</span><span class="v">−$1,381.00</span></div>
+            <div class="scr-row"><span>Gross commission</span><span class="v">$28,502.50</span></div>
+            <div class="scr-row"><span>Expenses &amp; fees</span><span class="v">−$1,287.00</span></div>
             <div class="scr-row"><span>Mileage · 71 mi</span><span class="v">−$51.48</span></div>
-            <div class="scr-row"><span>Net income</span><span class="v">$27,539.52</span></div>
+            <div class="scr-row"><span>Net income</span><span class="v">$27,164.02</span></div>
+          </div>
+          <div class="scr-card">
+            <div class="scr-row" style="border:none"><span>💬 <b>Ask Casey</b> — knows your ledger</span><span class="v" style="color:var(--green)">›</span></div>
           </div>
         </div>
+        <div class="scr-tabbar"><b>Home</b><span>Deals</span><span>Spending</span><span>Miles</span><span>Taxes</span></div>
       </div></div>
     </div>
   </div>
@@ -203,7 +206,7 @@
       <div class="feat">
         <div class="feat-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1E6B4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7H20M4 12H20M4 17H13"/></svg></div>
         <h3>License &amp; brokerage fees</h3>
-        <p>NAR dues, license renewals, desk fees, E&amp;O — tracked with due dates, marked paid in a tap, and deducted automatically.</p>
+        <p>NAR dues, license renewals, desk fees, E&amp;O — tracked with due dates and deducted by the real rules: the nondeductible lobbying share excluded, RPAC flagged automatically.</p>
       </div>
       <div class="feat">
         <div class="feat-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1E6B4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3V21M5 8L12 3L19 8"/></svg></div>
