@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Send Feedback — Closebooks</title>
+  <meta name="description" content="Tell us what's working, what's broken, and what Closebooks should do next. Feedback from working agents shapes every release." />
+  <link rel="canonical" href="https://closebooks.app/feedback" />
+  <meta name="robots" content="noindex" />
+  <link rel="icon" type="image/png" href="/closebooks-mark.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root { color-scheme: only light;
+      --green: #1E6B4F; --green-d: #15523C; --green-soft: #EAF3EE; --green-border: #CBE2D6;
+      --ink: #1A1F2B; --ink-soft: #6B7280; --ink-faint: #9CA3AF;
+      --bg: #FAFAF8; --surface: #fff; --border: #EAEAE6; --gold: #C9A455;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; background: #FAFAF8 !important; }
+    body { background: #FAFAF8 !important; color: #1A1F2B !important; font-family: 'Inter', -apple-system, system-ui, sans-serif; line-height: 1.6; }
+    .wrap { max-width: 680px; margin: 0 auto; padding: 0 20px; }
+    header { padding: 18px 0; border-bottom: 1px solid var(--border); background: var(--surface); }
+    .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 17px; color: var(--ink); text-decoration: none; }
+    .mark { width: 30px; height: 30px; border-radius: 9px; background: linear-gradient(140deg,#26805F,var(--green-d)); display: inline-flex; align-items: center; justify-content: center; }
+    h1 { font-size: clamp(26px, 5vw, 34px); font-weight: 800; letter-spacing: -0.02em; line-height: 1.2; margin: 38px 0 12px; }
+    .sub { color: var(--ink-soft); font-size: 15.5px; margin-bottom: 8px; }
+    .promise { display: flex; align-items: center; gap: 10px; background: var(--green-soft); border: 1px solid var(--green-border); border-radius: 14px; padding: 12px 16px; margin: 18px 0 24px; font-size: 13.5px; color: var(--green-d); font-weight: 600; }
+    .form-card { background: var(--surface); border: 1px solid var(--border); border-radius: 20px; overflow: hidden; box-shadow: 0 8px 28px rgba(16,24,20,0.06); }
+    .form-card iframe { display: block; width: 100%; border: none; min-height: 640px; }
+    .alt { text-align: center; font-size: 13px; color: var(--ink-faint); margin: 22px 0 8px; }
+    .alt a { color: var(--green); font-weight: 600; text-decoration: none; }
+    footer { border-top: 1px solid var(--border); padding: 24px 0 40px; margin-top: 34px; font-size: 12.5px; color: var(--ink-faint); }
+    footer a { color: var(--green); text-decoration: none; }
+  </style>
+</head>
+<body>
+  <header><div class="wrap"><a class="brand" href="/">
+    <span class="mark"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="15.9" y="4.4" width="1.7" height="4.6" rx="0.5" fill="#fff"/><polygon points="2.85,11.15 12,2.9 21.15,11.15" fill="#fff"/><rect x="4.6" y="10.2" width="14.8" height="10.2" rx="1.4" fill="#fff"/><path d="M8.2 13.6L11.1 16.5L16.5 10.4" stroke="#15523C" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    Closebooks</a></div></header>
+
+  <main class="wrap">
+    <h1>Tell us what to fix — or build.</h1>
+    <p class="sub">Closebooks is built with working agents, not just for them. Found a bug? Missing something your business needs? Two minutes here genuinely changes the roadmap.</p>
+    <div class="promise">✓&nbsp; Every submission is read by the founder. The good ones ship.</div>
+
+    <div class="form-card">
+      <!-- Replace pb1E1q with your feedback form's ID from tally.so (Share → Embed) -->
+      <iframe src="https://tally.so/embed/pb1E1q?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+        title="Closebooks feedback form" loading="lazy"></iframe>
+    </div>
+
+    <p class="alt">Prefer email? <a href="mailto:hello@closebooks.app?subject=Closebooks%20feedback">hello@closebooks.app</a></p>
+    <!-- AT LAUNCH: uncomment and point at the Featurebase board, seeded with 5-8 real roadmap items first
+    <p class="alt" style="margin-top:6px">Want a say in what we build next? <a href="https://closebooks.featurebase.app">Vote on the public roadmap →</a></p>
+    -->
+  </main>
+
+  <footer><div class="wrap">© 2026 Closebooks · <a href="/">Home</a> · <a href="/mileage-calculator">Mileage calculator</a></div></footer>
+
+  <script async src="https://tally.so/widgets/embed.js"></script>
+</body>
+</html>
